@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* Universal Selector (*) */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Tag Selector / Element Selector */
+        div {
+            background-color: pink;
+            color: blue;
+        }
+        p {
+            color:blue;
+        }
+
+        /* ID Selector ( # ) */
+        #main_heading {
+            font-size: 50px ;
+        }
+
+        #first {
+            color: red;
+        }
+
+        /* Class Selector ( . ) */
+        .para {
+            background-color: yellow;
+            height: 30px;
+        }
+
+        /* Sub selecter ( )  */
+        div h4 {
+            color: aqua;
+            background-color: black;
+        }
+
+        /* Attribute Selector [ ]*/
+        [type] {
+            border: 3px solid blue;
+        }
+
+        input[type="password"] {
+            border: 3px solid red;
+        }
+        
+        /* Group selector ( , ) */
+        h1, p, div {
+            border: 3px solid blueviolet;
+        }
+
+
+    </style>
+
+</head>
+<body>
+     
+    <h1 id="main_heading">This is heading</h1>
+
+    <p id="first">This is paragraph</p>
+
+    <p class="para">This is paragraph</p>
+    <p class="para">This is paragraph</p>
+
+    <p class="para">This is paragraph</p>
+    <p class="para">This is paragraph</p>
+
+    <div> 
+        <h4>This is a child</h4>
+        <div>
+            <p>hello</p>
+            <div>
+                sdfg
+            </div>
+        </div>
+    </div>
+
+    <input type="text">
+    <input type="email" name="" id="">
+    <input type="number">
+    <input type="password" name="" id="">
+    
+</body>
+</html>
