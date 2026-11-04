@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block properties</title>
+    <style>
+        /* display:block */
+        #div-box {
+            /* display: inline; */
+            background-color: aqua;
+            height: 100px;
+            padding: 7px;
+        }
+
+        /* display:inline */
+        .span-box {
+            /* display: block; */
+            background-color:pink;
+            height: 100px;
+
+        }
+
+        /* display: inline-block */
+        #span-btn {
+            background-color: red;
+            border-radius: 10px;
+            padding: 2px 5px;
+
+            display: inline-block;
+            height: 40px;
+        }
+
+        /* display:none */
+        .span-box{
+            display: none;
+            /* visibility: hidden; */
+        }
+
+        /* visibility => visible / hidden */
+        #span-btn {
+            /* visibility: visible; */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- by default block element -->
+    <div id="div-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, consequatur.
+
+        <span id="span-btn">
+            Resister Button
+        </span>
+
+        <span>
+            second span
+        </span>
+
+    </div>
+
+    <!-- by default inline element -->
+    <span class="span-box">
+        Lorem ipsum dolor sit amet.
+    </span>
+    <span>
+        next box of span
+    </span>
+    
+</body>
+</html>
