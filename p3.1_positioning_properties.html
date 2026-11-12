@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>potioning properties</title>
+    <style>
+
+        .parent{
+            width: 200px;
+            height: 200px;
+            background-color:aquamarine;
+            border:2px solid black;
+            /* margin: 20px; */
+
+            /* it is used for absolute child */
+            position: relative;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border:2px solid black;
+
+            /* static */
+            /* position: static;
+            top: 30px;
+            left: 20px; */
+
+            /* relative */
+            /* position: relative;
+            top: 40px;
+            left: 50px; */
+
+            /* absolute */
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grand_parent">
+        <div class="parent">
+            parent
+            <div class="child">
+                child
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

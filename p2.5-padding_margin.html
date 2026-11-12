@@ -68,6 +68,36 @@
 
         }
         
+        #parent{
+            height: 300px;
+            width: 300px;
+            background-color: chartreuse;
+
+            border: 3px solid black;
+            margin-top: 5px;
+
+        }
+
+        .child{
+            height: 100px;
+            width: 100px;
+            background-color:darkturquoise;
+
+            border: 2px solid red;
+
+            /* auto makes the div in center of parent */
+            margin: 2px auto;
+        }
+
+        #child1{
+
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #child2{
+            padding: 20px;
+            box-sizing: content-box;
+        }
 
     </style>
 
@@ -96,6 +126,12 @@
         <div class="box">box2</div>
 
      </div>
+
+     <!-- center div using margin -->
+      <div id="parent">
+        <div id="child1" class="child">box</div>
+        <div id="child2" class="child">box</div>
+      </div>
     
 </body>
 </html>
