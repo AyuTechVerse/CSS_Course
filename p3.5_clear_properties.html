@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear properties</title>
+
+    <style>
+        .flower {
+            float: left;  
+            /* clear: both; */
+            width: 120px;
+            margin-right: 10px;
+        } 
+
+        .next-section{
+            clear: left;
+            background-color:aquamarine;
+        }
+
+        p{
+            clear: left;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+        <img src="./images/flower.jfif" class="flower" alt="Flower">
+
+        <p>
+            This text appears beside the floated image.
+        </p>
+
+        <div class="next-section">
+            This section starts below the floated image.
+        </div>
+
+</body>
+</html>
